@@ -25,11 +25,34 @@ El *score* final se obtiene promediando las probabilidades de los siguientes mod
 | **M9** | Todo (sin Ranks) + Lags 6,12 + RF + Ratio Avg | 100003 (Eze) | 433.200.000 |
 | **M10** | Todo (sin Ranks) + Lags 6,12 c/UVA (Und=0.05) | 990013 (Agus) | 428.000.000 |
 
-> **Nota:** "Todo (sin Ranks)" indica que se utilizaron todas las variables generadas excepto las de tipo *Rank*.
 
-## 2. Estructura del Repositorio
-* `/notebooks`: Contiene el análisis exploratorio y el tuning de hiperparámetros.
-* `/src`: Scripts de python para reproducir el entrenamiento y la inferencia.
+## 2. Estructura del Repositorio y Guía de Archivos
 
+Para facilitar la identificación de los experimentos, los notebooks siguen una **convención de nombres** estricta que vincula el código con la tabla de resultados anterior.
 
+### 📂 Nomenclatura de Archivos
+Los archivos principales siguen el patrón:
+`m{ID}_{Estrategia}_{Semilla}.ipynb`
 
+* **`m{ID}`**: Identificador único del modelo (coincide con la tabla de la Sección 2).
+* **`{Estrategia}`**: Breve descripción (ej: `uva`, `under_25`, `ranks`).
+* **`{Semilla}`**: Semilla aleatoria utilizada para reproducibilidad.
+
+### 🗺️ Mapeo de Modelos
+A continuación, se indican los archivos específicos para reproducir cada modelo:
+
+* **M1:** `m1_final_under_25_100003.ipynb`
+* **M2:** `m2_final_under_25_990013.ipynb`
+* **M3:** `m3_ranks_dummies_100003.ipynb`
+* **M4:** `m4_ranks_lags_990013.ipynb`
+* **M5:** `m5_todo_lags_100003.ipynb`
+* **M6:** `m6_todo_lags_990013.ipynb`
+* **M7:** `m7_todo_uva_100003.ipynb`
+* **M8:** `m8_ranks_ripte_100003.ipynb`
+* **M9:** `m9_rf_ratio_100003.ipynb`
+* **M10:** `m10_uva_990013.ipynb`
+
+### 🚀 Ensamble Final
+El archivo que consolida las salidas de los 10 modelos anteriores y genera el submission final es:
+
+* **Script de Ensamble:** `11_ensemble_submission.ipynb`
