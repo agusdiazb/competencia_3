@@ -12,7 +12,7 @@ Ante la urgencia, recurrimos a una estrategia probada: un modelo utilizado en la
 La entrega definitiva es un ensamble simple (promedio) de **3 corridas** de este modelo de contingencia.
 
 * **Archivo del Modelo:** `zlightgbm_danger.ipynb`
-* **Estrategia:** LightGBM "Legacy" (C2) ensamblado con 3 semillas.
+* **Estrategia:** ensamblado con 3 semillas.
 
 
 
