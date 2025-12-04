@@ -1,11 +1,18 @@
 # Competencia 3 - Agustin Diaz Barquinero y Ezequiel Pereyra
 
-Inicialmente se planeó una estrategia desglosada mas abajo para esta nueva competencia. La misma fracasó rotundamente, todos los modelos daban helicoptero (asi como el ensemble de los 10) aun cuando los mismos testeados en validacion nos dieron resultados que considerabamos buenos y aceptables.
+## 1. Resumen Ejecutivo y Solución Final
 
-Recurrimos a un modelo usado en competencia2, mas basico, para testearlo con el bot y alcanzamos un "Danger".
+**Nota:** Esta entrega es el resultado de una decisión de **último momento** ante el fallo de nuestra estrategia principal.
 
-La entrega final es un ensamble de 3 corridas de ese modelo. (zlightgbm_danger.ipynb)
+Inicialmente se planeó una estrategia compleja (desglosada más abajo) para esta nueva competencia. La misma **fracasó rotundamente**: todos los modelos daban "helicóptero" en el Leaderboard público (así como el ensemble de los 10), aun cuando los mismos testeados en nuestra validación local arrojaban resultados que considerábamos buenos y aceptables.
 
+Ante la urgencia, recurrimos a una estrategia probada: un modelo utilizado en la Competencia 2, más básico, para testearlo con el bot. Con este enfoque logramos estabilizar los resultados y alcanzamos el status de **"Danger"**.
+
+### 🏆 La Solución Final
+La entrega definitiva es un ensamble simple (promedio) de **3 corridas** de este modelo de contingencia.
+
+* **Archivo del Modelo:** `zlightgbm_danger.ipynb`
+* **Estrategia:** LightGBM "Legacy" (C2) ensamblado con 3 semillas.
 
 
 
@@ -18,6 +25,8 @@ Aunque todos comparten una base de ingeniería de características similar, intr
 2.  **Deflactores:** Variantes ajustadas por índice UVA, RIPTE e IPC.
 3.  **Selección de Variables:** Modelos con y sin *ranks*, variables de *random forest*, o *lags* específicos.
 4.  **Semillas y Autores:** Entrenamiento colaborativo para maximizar la aleatoriedad.
+
+> **Dato Técnico Importante:** Para cada uno de los 10 modelos candidatos listados abajo, se aplicó **Semillerio con 100 semillas (100 seeds)** 
 
 ### 1. Arquitectura del Ensamble
 El *score* final se obtiene promediando las probabilidades de los siguientes modelos candidatos. La diversidad entre ellos (especialmente entre las estrategias M1/M2 y el resto) fue clave para estabilizar la predicción final.
