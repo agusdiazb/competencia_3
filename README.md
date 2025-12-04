@@ -17,7 +17,7 @@ La entrega definitiva es un ensamble simple (promedio) de **3 corridas** de este
 
 
 
-### --------- Estrategia planeada para C3 que fracasó estripirosamente----
+### --------- Estrategia planeada para C3 que fracasó rotundamente ----
 Nuestra estrategia final consiste en un **ensamble** de las predicciones de **10 modelos** de LightGBM.
 
 Aunque todos comparten una base de ingeniería de características similar, introdujimos diversidad variando:
