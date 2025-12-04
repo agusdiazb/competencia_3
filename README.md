@@ -4,9 +4,9 @@
 
 **Nota:** Esta entrega es el resultado de una decisión de **último momento** ante el fallo de nuestra estrategia principal.
 
-Inicialmente se planeó una estrategia compleja (desglosada más abajo) para esta nueva competencia. La misma **fracasó rotundamente**: todos los modelos daban "helicóptero" en el Leaderboard público (así como el ensemble de los 10), aun cuando los mismos testeados en nuestra validación local arrojaban resultados que considerábamos buenos y aceptables.
+Inicialmente se planeó una estrategia compleja (desglosada más abajo) para esta nueva competencia. La misma **fracasó rotundamente**: todos los modelos daban "helicóptero" (así como el ensemble de los 10), aun cuando los mismos testeados en nuestra validación local arrojaban resultados que considerábamos buenos y aceptables.
 
-Ante la urgencia, recurrimos a una estrategia probada: un modelo utilizado en la Competencia 2, más básico, para testearlo con el bot. Con este enfoque logramos estabilizar los resultados y alcanzamos el status de **"Danger"**.
+Ante la urgencia, recurrimos a una estrategia probada: un modelo utilizado en la Competencia 2, más básico, para testearlo con el bot. Con este enfoque logramos el status de **"Danger"**.
 
 ### 🏆 La Solución Final
 La entrega definitiva es un ensamble simple (promedio) de **3 corridas** de este modelo de contingencia.
