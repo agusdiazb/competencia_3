@@ -29,7 +29,7 @@ Aunque todos comparten una base de ingeniería de características similar, intr
 > **Dato Técnico Importante:** Para cada uno de los 10 modelos candidatos listados abajo, se aplicó **Semillerio con 100 semillas (100 seeds)** 
 
 ### 1. Arquitectura del Ensamble
-El *score* final se obtiene promediando las probabilidades de los siguientes modelos candidatos. La diversidad entre ellos (especialmente entre las estrategias M1/M2 y el resto) fue clave para estabilizar la predicción final.
+El *score* final se obtiene promediando las probabilidades de los siguientes modelos candidatos. 
 
 | ID | Estrategia / Features Principales | Semilla (Autor) | Ganancia (Validación) |
 |:---:|:---|:---:|:---:|
