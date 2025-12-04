@@ -1,6 +1,16 @@
 # Competencia 3 - Agustin Diaz Barquinero y Ezequiel Pereyra
 
+Inicialmente se planeó una estrategia desglosada mas abajo para esta nueva competencia. La misma fracasó rotundamente, todos los modelos daban helicoptero (asi como el ensemble de los 10) aun cuando los mismos testeados en validacion nos dieron resultados que considerabamos buenos y aceptables.
 
+Recurrimos a un modelo usado en competencia2, mas basico, para testearlo con el bot y alcanzamos un "Danger".
+
+La entrega final es un ensamble de 3 corridas de ese modelo. (zlightgbm_danger.ipynb)
+
+
+
+
+
+### --------- Estrategia planeada para C3 que fracasó estripirosamente----
 Nuestra estrategia final consiste en un **ensamble** de las predicciones de **10 modelos** de LightGBM.
 
 Aunque todos comparten una base de ingeniería de características similar, introdujimos diversidad variando:
@@ -55,4 +65,4 @@ A continuación, se indican los archivos específicos para reproducir cada model
 ### 🚀 Ensamble Final
 El archivo que consolida las salidas de los 10 modelos anteriores y genera el submission final es:
 
-* **Script de Ensamble:** `11_ensemble_submission.ipynb`
+* **Script de Ensamble:** `ensembles_fallidos.ipynb`
