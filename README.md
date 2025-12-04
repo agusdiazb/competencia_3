@@ -1,6 +1,6 @@
 # Competencia 3 - Agustin Diaz Barquinero y Ezequiel Pereyra
 
-## 1. Resumen Ejecutivo y Solución Final
+## 1. Resumen
 
 **Nota:** Esta entrega es el resultado de una decisión de **último momento** ante el fallo de nuestra estrategia principal.
 
